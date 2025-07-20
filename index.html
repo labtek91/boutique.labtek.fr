@@ -1,48 +1,65 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boutique Labtek</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Labtek Services IT</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Boutique Labtek</h1>
-    <p>Solutions techniques & équipements professionnels</p>
+    <h1>Labtek Services IT</h1>
+    <p>Solutions IT sur mesure pour PME</p>
+    <a href="#contact" class="btn">Demandez un devis</a>
   </header>
-
-  <section class="products">
-    <div class="product">
-      <img src="https://via.placeholder.com/300x200" alt="Produit 1" />
-      <h2>Produit 1</h2>
-      <p>Un excellent produit pour vos besoins techniques.</p>
-      <p class="price">Prix : 120 €</p>
-    </div>
-
-    <div class="product">
-      <img src="https://via.placeholder.com/300x200" alt="Produit 2" />
-      <h2>Produit 2</h2>
-      <p>Haute performance, robustesse garantie.</p>
-      <p class="price">Prix : 250 €</p>
-    </div>
-
-    <div class="product">
-      <img src="https://via.placeholder.com/300x200" alt="Produit 3" />
-      <h2>Produit 3</h2>
-      <p>Idéal pour les laboratoires et professionnels.</p>
-      <p class="price">Prix : 180 €</p>
+  <section id="services">
+    <h2>Nos Services</h2>
+    <div class="service-list">
+      <div class="service">
+        <h3>Systèmes & Réseaux</h3>
+        <p>Installation serveurs, firewall, VPN, sauvegarde...</p>
+      </div>
+      <div class="service">
+        <h3>Bureautique & Email Pro</h3>
+        <p>Installation Office, messagerie Outlook personnalisée</p>
+      </div>
+      <div class="service">
+        <h3>Logiciels Métiers</h3>
+        <p>Installation Adobe, DaVinci Resolve, etc.</p>
+      </div>
     </div>
   </section>
-
-  <section class="contact">
-    <h3>Contact & Commandes</h3>
-    <p>Envoyez vos demandes de devis ou commandes à :</p>
-    <p><a href="mailto:contact@labtek.fr">contact@labtek.fr</a></p>
+  <section id="plans">
+    <h2>Contrats de Maintenance</h2>
+    <table>
+      <tr><th>Formule</th><th>Délai</th><th>Services</th><th>Support</th></tr>
+      <tr><td>Basic</td><td>72 h ouvrées</td><td>Mises à jour & support mail</td><td>Email</td></tr>
+      <tr><td>Standard</td><td>24 h</td><td>Préventive + correctives</td><td>Email + téléphone</td></tr>
+      <tr><td>Premium</td><td>4 h urgences</td><td>Interventions on‑site, backups, prioritaire</td><td>Support complet 7j/7</td></tr>
+    </table>
   </section>
-
+  <section id="about">
+    <h2>Pourquoi nous choisir ?</h2>
+    <p>Réponse personnalisée, proximité locale, plus de X années d’expérience, satisfaction client garantie.</p>
+  </section>
+  <section id="testimonials">
+    <h2>Témoignages</h2>
+    <blockquote>« Travail rapide et professionnel, je recommande ! » – Client PME local</blockquote>
+  </section>
+  <section id="contact">
+    <h2>Contactez‑nous</h2>
+    <form action="https://formspree.io/f/votreformid" method="POST">
+      <input type="text" name="name" placeholder="Nom / société" required>
+      <input type="email" name="email" placeholder="Email professionnel" required>
+      <textarea name="message" placeholder="Description de votre projet"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <p>Téléphone : +33 6 XX XX XX XX</p>
+    <p>Email : contact@labtek.fr</p>
+  </section>
   <footer>
-    <p>&copy; 2025 Boutique Labtek — Tous droits réservés</p>
+    <p>© Labtek IT Services – Micro‑entreprise</p>
   </footer>
 </body>
 </html>
