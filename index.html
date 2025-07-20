@@ -99,10 +99,10 @@
   <section id="contact" class="section slide-in">
     <div class="container">
       <h2>Contactez-nous</h2>
-      <form>
-        <input type="text" placeholder="Nom / Société" required />
-        <input type="email" placeholder="Email professionnel" required />
-        <textarea placeholder="Votre message..." rows="5" required></textarea>
+      <form action="https://formspree.io/f/xblkdyqn" method="POST">
+        <input type="text" name="name" placeholder="Nom / Société" required />
+        <input type="email" name="email" placeholder="Email professionnel" required />
+        <textarea name="message" placeholder="Votre message..." rows="5" required></textarea>
         <button type="submit">Envoyer</button>
       </form>
       <div class="contact-info">
