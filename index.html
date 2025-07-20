@@ -8,24 +8,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
   <header class="hero">
     <div class="container">
-      <div class="logo">Labtek IT</div>
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#plans">Maintenance</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="burger">
-          <span></span><span></span><span></span>
-        </div>
-      </nav>
+      <div class="top-bar">
+        <img src="Labtek-horizontal.png" alt="Labtek Logo" class="logo">
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#plans">Maintenance</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="burger" id="burger">
+            <span></span><span></span><span></span>
+          </div>
+        </nav>
+      </div>
       <div class="hero-content">
         <h1>Solutions IT pour PME</h1>
         <p>Installation, logiciels, maintenance et assistance professionnelle.</p>
@@ -40,17 +40,17 @@
         <h2>Nos Services</h2>
         <div class="cards">
           <div class="card">
-            <i class="fas fa-network-wired"></i>
+            <img src="Labtek-logo.png" alt="Network" class="icon">
             <h3>Systèmes & Réseaux</h3>
             <p>Installation de serveurs, pare-feux, VPN, sauvegardes automatisées…</p>
           </div>
           <div class="card">
-            <i class="fas fa-envelope"></i>
+            <img src="Labtek-logo.png" alt="Email" class="icon">
             <h3>Bureautique & Email Pro</h3>
             <p>Installation de Microsoft Office, messagerie professionnelle personnalisée.</p>
           </div>
           <div class="card">
-            <i class="fas fa-laptop-code"></i>
+            <img src="Labtek-logo.png" alt="Software" class="icon">
             <h3>Logiciels Métiers</h3>
             <p>Installation de logiciels métiers : Adobe, DaVinci Resolve, etc.</p>
           </div>
@@ -81,17 +81,17 @@
         <h2>Pourquoi nous choisir ?</h2>
         <div class="cards">
           <div class="card">
-            <i class="fas fa-user-check"></i>
+            <img src="Labtek-logo.png" alt="Expertise" class="icon">
             <h3>Expertise personnalisée</h3>
             <p>Des solutions adaptées à vos besoins métiers spécifiques.</p>
           </div>
           <div class="card">
-            <i class="fas fa-bolt"></i>
+            <img src="Labtek-logo.png" alt="Fast" class="icon">
             <h3>Réactivité</h3>
             <p>Nous intervenons rapidement selon votre contrat de maintenance.</p>
           </div>
           <div class="card">
-            <i class="fas fa-handshake"></i>
+            <img src="Labtek-logo.png" alt="Support" class="icon">
             <h3>Accompagnement</h3>
             <p>Un suivi humain, professionnel et proche de vos équipes.</p>
           </div>
@@ -109,8 +109,8 @@
           <button type="submit">Envoyer</button>
         </form>
         <div class="contact-info">
-          <p><i class="fas fa-envelope"></i> contact@labtek.fr</p>
-          <p><i class="fas fa-phone"></i> +33 6 XX XX XX XX</p>
+          <p>Email : contact@labtek.fr</p>
+          <p>Téléphone : +33 6 XX XX XX XX</p>
         </div>
       </div>
     </section>
@@ -121,7 +121,7 @@
   </footer>
 
   <script>
-    const burger = document.querySelector('.burger');
+    const burger = document.getElementById('burger');
     const nav = document.querySelector('.nav-links');
     burger.addEventListener('click', () => {
       nav.classList.toggle('nav-active');
