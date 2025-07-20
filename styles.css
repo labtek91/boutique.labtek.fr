@@ -1,57 +1,104 @@
+
+* {
+  box-sizing: border-box;
+}
 body {
-  font-family: "Segoe UI", sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f7f7f7;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
   color: #333;
 }
-
 header {
-  background-color: #2c3e50;
+  background-color: #1e2a38;
   color: white;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
-
 header h1 {
   margin: 0;
   font-size: 2.5rem;
 }
-
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
+nav {
+  background: #15202b;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
 }
-
-.product {
-  background-color: white;
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.service {
+  flex: 1 1 300px;
+  background: white;
+  padding: 1.5rem;
   border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
 }
-
-.product img {
+.service i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+table {
   width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: left;
+}
+th {
+  background-color: #f0f0f0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+input, textarea {
+  padding: 1rem;
+  border: 1px solid #ccc;
   border-radius: 5px;
 }
-
-.price {
-  font-weight: bold;
-  color: #e67e22;
-}
-
-.contact {
-  background-color: #ecf0f1;
-  padding: 2rem;
-  text-align: center;
-}
-
-footer {
-  background-color: #bdc3c7;
-  text-align: center;
+button {
   padding: 1rem;
-  font-size: 0.9rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+footer {
+  background-color: #1e2a38;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+}
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
